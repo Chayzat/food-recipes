@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>recipes | website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+    <!-- ===================== header =================== -->
+    <header class="header container">
+        <h1 class="header__title">
+            One thousands flavors in one place.
+        </h1>
+    </header>
+    <!-- ===================== main =================== -->
+    <main class="main">
+        <!-- ===================== search =================== -->
+        <section class="search">
+            <div class="search__container container">
+                <input type="text" id="search-input" placeholder="enter your ingredient" class="search-control">
+                <button type="submit"class="search__btn" id="search-btn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+        </section>
+        <!-- ===================== random =================== -->
+        <section class="random section" id="random-section">
+            <div class="random__container container">
+                <div class="random__content">
+                    <div class="random__content-box">
+                        <h2 class="random__content-title" id="random-title"></h2>
+                        <div class="random__content-img img">
+                            <img id="random-img" src="" alt="">
+                        </div>
+                    </div>
+                    <div class="random__content-box left">
+                        <h3 class="random__instruction-title">Instruction:</h3>
+                        <p class="random__instruction-text" id="random-instruction"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ===================== result =================== -->
+        <section class="result section" id="result-section">
+            <div class="result__container container">
+                <h2 class="result__title title">
+                    Your search results:
+                </h2>
+                <div class="result__meal" id="meal"></div>
+            </div>
+        </section>
+         <!-- ===================== details =================== -->
+         <section class="details section hide" id="details-section">
+            <div class="details__container container">
+                <button type="button" class="details__btn close__btn" id="close-btn">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                <div class="details__content">
+                </div>
+            </div>
+         </section>
+    </main>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
