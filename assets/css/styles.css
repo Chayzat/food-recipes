@@ -261,6 +261,9 @@ img {
 }
 
 @media screen and (max-width: 678px) {
+    .header__title {
+        font-size: 1.7rem;
+    }
   .search {
     padding: 1rem;
   }
@@ -270,6 +273,12 @@ img {
   .random__content-img {
     width: 300px;
     height: auto;
+  }
+  .result {
+    padding: 0.5rem 0rem 2rem;
+  }
+  .result__title {
+    font-size: 2rem;
   }
   .result__meal {
     display: flex;
@@ -288,5 +297,8 @@ img {
   .details__content-instruction-title {
     padding-bottom: 0;
     margin-top: 1rem;
+  }
+  .close__btn {
+    font-size: 1.9rem;
   }
 }
